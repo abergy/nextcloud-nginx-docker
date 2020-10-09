@@ -17,11 +17,11 @@ Here are some explanations for the files:
 
 ## docker-compose.yaml
 - This compose file starts mariadb, nextcloud and a ngnix-web-proxy.
-- You need a .env file for the secrets an environments.
+- You need a .env file for the secrets an environment.
 
 ## nginx.conf
-- This is the config file for the ngnix-web-proxy. Its almost equl to the config file from the nextcloud documentation. Its linked in the compose file.
+- This is the config file for the ngnix-web-proxy. Its almost equal to the config file from the nextcloud documentation. It's linked in the compose file.
 
 ## local_ngnix
 - Configuration for the "local" ngnix server. It links the request to http://127.0.0.1:<contanier_port>.
-- certbot manage the certificates and it will look different then this file. This ist just to show how the container link works. (/etc/nginx/sites-avaliable/example.com)
+- certbot manage the certificates and it will look different from this file. This is just to show how the container link works. (/etc/nginx/sites-avaliable/example.com)
